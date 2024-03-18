@@ -1,0 +1,408 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "League Spartan", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+.beforDes {
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+.percentDes {
+  font-size: 12px;
+  color: red;
+  align-items: center;
+}
+
+/*nav start*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: #e3e6f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: -1px;
+  left: 0;
+  border-top: solid #ffa03e;
+}
+
+#navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navBar li {
+  position: relative;
+  list-style: none;
+  padding: 0 20px;
+}
+
+#navBar li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+
+#navBar li a:hover,
+#navBar li a.active {
+  color: #ffa03e;
+}
+
+#navBar li a.active::after,
+#navBar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #ffa03e;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/*Home page*/
+.sec1Title {
+  display: flex;
+  padding: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#sec1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sec1 .sec1Box {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  padding: px px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  margin: 15px 0;
+  transition: 1s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#sec1 .sec1Box:hover {
+  background-color: #b177da;
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+/**/
+#sec1 .sec1Boxi {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  padding: px px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  margin: 15px 0;
+  transition: 1s;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#sec1 .sec1Boxi:hover {
+  background-color: #fe1114;
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#sec1 .sec1Box h6 {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  font-size: large;
+  border-radius: 4px;
+  color: #ffa03e;
+  background-color: transparent;
+}
+
+.sec2 {
+  background-image: url(../img/categories/1.gif);
+  height: 30vh;
+  width: 100%;
+  background-size: contain;
+  /* background-position: top 25% right 5; */
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*break products*/
+
+#sec2 {
+  text-align: center;
+}
+
+#sec2 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+
+#sec2 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  padding: 12px;
+}
+
+#sec2 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#sec2 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.spanDes {
+  color: #b0b0b0;
+  font-size: 12px;
+}
+
+#sec2 .pro .des h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+#sec2 .pro .des i {
+  font-size: 12px;
+  color: rgb(243, 181, 25);
+}
+
+#sec2 .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+
+#sec2 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color: #ffa03e;
+  border: 1px solid #ff9e3e39;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+#sec2 .proContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+/**/
+
+#sec3 {
+  background-image: url(../img/Shop/DesktopEN.jpg);
+  height: 33vh;
+  width: 100%;
+  background-size: auto;
+  background-position: center;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/**/
+#sec4 {
+  text-align: center;
+}
+
+#sec4 .pro {
+  width: 8%;
+  min-width: 60px;
+  padding: 20px;
+  border: 1px solid #cce7d0;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 0 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+
+#sec4 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  padding: 22px;
+}
+
+#sec4 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#sec4 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+.spanDes {
+  color: #b0b0b0;
+  font-size: 12px;
+}
+
+#sec4 .pro .des h5 {
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+#sec4 .pro .des i {
+  font-size: 12px;
+  color: rgb(243, 181, 25);
+}
+
+#sec4 .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #088178;
+}
+
+#sec4 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  font-weight: 500;
+  color: #ffa03e;
+  border: 1px solid #ff9e3e39;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+#sec4 .proContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+/**/
+footer {
+  border-top: solid #ffa03e;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .logo {
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 13px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+footer a:hover {
+  color: #ffa03e;
+}
+
+footer .copyRight {
+  width: 100%;
+  text-align: center;
+  border-top: solid #ffa03e;
+}
+
+/*media query*/
